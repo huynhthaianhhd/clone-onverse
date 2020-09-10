@@ -1,0 +1,25 @@
+.content_title{
+    margin: 130px 0px 120px 0px;
+    padding: 0px 100px 0px 100px;
+}
+.content{
+    width: 72%;
+}
+h2{
+    font-family: 'Poppins';
+    font-size: 36.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    color:#222;
+    margin:10px 0 20px 0;
+    padding :0;
+}
+p{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 39px;
+    color:#484e54;
+}

@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    height: 105px;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    /* background-color: gray; */
+}
+.header_left{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+}
+.header_right{
+    width: 180px;
+    padding : 28px 0px 29px 15px;
+    border-left:1px solid rgba(0,0,0,.06);
+}
+.header_nav_ul{
+    display:flex;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    padding-right: 18px;
+}
+.header_nav_ul>li{
+    display: block;
+}
+.header_icon_ul>li{
+    display: block;
+}
+.header_nav_ul>li>a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-decoration: none;
+    color: black;
+    padding : 15px 20px 15px 13.5px;
+}
+.header_icon_ul>li>a{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    padding : 10px 12px 9px 5px;
+}
+.header_icon_ul{
+    display:flex;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+}
+
+.header_title{
+    margin: 37px 0px 37px 0px;
+    width: 120px;
+}
