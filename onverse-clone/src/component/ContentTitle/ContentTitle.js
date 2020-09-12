@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import "./ContentTitle.css"
 export default class ContentTitle extends Component {
     render() {
@@ -11,7 +12,7 @@ export default class ContentTitle extends Component {
                     <p>
                     Say Hello to the new editor. Gutenberg is a whole new way to use WordPress.
                     </p>
-                    <p><a href="/" target="_blank" rel="noopener">Publishing experience</a> has been rebuilt for media rich pages and posts and you can enjoy the flexibility that blocks will bring.</p>
+                    <p><Link to="/" >Publishing experience</Link> has been rebuilt for media rich pages and posts and you can enjoy the flexibility that blocks will bring.</p>
                 </div>
             </div>
         )

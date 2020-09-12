@@ -2,6 +2,7 @@
   width: 459.33px;
   margin: 0 0 60px 0;
   padding: 0 30px;
+  background-color: #FFFFFF;
 }
 .item_image {
   width: 399.33px;
@@ -37,10 +38,7 @@ h2 {
   margin: 15px 0px 20px 0px;
 }
 .item_description {
-  font-family: "Lora";
   font-size: 17px;
-  font-weight: 400;
-  font-style: normal;
   color: #484e54;
   line-height: 29px;
   opacity: 0.8;

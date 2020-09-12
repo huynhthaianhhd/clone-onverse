@@ -1,8 +1,16 @@
+.home{
+  background-color: #FBFBFB;
+  font-family: 'Lora';
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+}
 .card_post {
   display: flex;
   padding: 0px 70px 10px 70px;
   margin-top: 160px;
 }
+
 .card_post_1, .card_post_2, .card_post_3 {
     display:flex;
     flex-direction: column;
@@ -16,10 +24,7 @@
   border: 1px solid #eaeaea;
   color: #343434;
   text-align: center;
-  font-family: "Lora";
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   padding: 13px 15px 13px 15px;
   line-height: 16px;
   margin-left: 15px;

@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import "./ContentMid.css"
 export default class ContentMid extends Component {
     render() {
+        const {title,author}=this.props;
         return (
-                <div className='mid_content'>
-                    <h2>Imagination was given to man to compensate him for what he is not, and a sense of humor was</h2>
-                    <p>Oscar Wilde</p>
+               <div className="mid">
+                    <div className='mid_content'>
+                    <h2>{title}</h2>
+                    <p>{author}</p>
                 </div>
+               </div>
         )
     }
 }

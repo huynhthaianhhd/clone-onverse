@@ -15,11 +15,10 @@ export default class HomePage extends Component {
     super(props);
     this.state = {
       activeName: 1,
-      limitCard: 8,
     };
   }
   handleOnClick = (value, pageCurrent) => (e) => {
-    if (value != pageCurrent) {
+    if (value !== pageCurrent) {
         window.scrollTo(0, 0);
     }
     this.setState(
@@ -50,7 +49,7 @@ export default class HomePage extends Component {
       page.push(
         <span
           key={i}
-          className={this.state.activeName === i ? "active" : ""}
+          className={pageCurrent === i ? "active" : ""}
         >
           <Link onClick={this.handleOnClick(i,pageCurrent)} to={`/${i}`}>{i}</Link>
         </span>
@@ -67,22 +66,26 @@ export default class HomePage extends Component {
     }
     for (let i = elementCurr; i < elementEnd; i++) {
       if (i % 3 === column) {
-        listResult.push(
-          <ItemPost
-            key={i}
-            image={listCard[i].image}
-            title={listCard[i].title}
-            date={listCard[i].date}
-            type={listCard[i].type}
-            description={listCard[i].description}
-          ></ItemPost>
-        );
+        if (listCard[i].isPost === 0){
+          listResult.push(<ContentMid key={i} title={listCard[i].title} author={listCard[i].author}></ContentMid>);
+        }
+        else{
+          listResult.push(
+            <ItemPost
+              key={i}
+              image={listCard[i].image}
+              title={listCard[i].title}
+              date={listCard[i].date}
+              type={listCard[i].type}
+              description={listCard[i].description}
+            ></ItemPost>
+          );
+        }
       }
     }
     return listResult;
   };
-  createNext = (pageCurrent) => {
-    const { limitCard } = this.state;
+  createNext = (pageCurrent,limitCard) => {
     pageCurrent=parseInt(pageCurrent);
     let numberOfPage = Math.ceil(listCard.length / limitCard);
     if (pageCurrent === numberOfPage) return;
@@ -106,7 +109,7 @@ export default class HomePage extends Component {
       );
   };
   render() {
-    const { limitCard } = this.state;
+    const  limitCard  = 9;
     const {match}=this.props;
     let pageCurrent;
     console.log(match);
@@ -114,10 +117,12 @@ export default class HomePage extends Component {
         pageCurrent = match.params.page;
     }
     else pageCurrent = 1;
+    pageCurrent=parseInt(pageCurrent);
     let numberOfPage = Math.ceil(listCard.length / limitCard);
     return (
       <div className="home">
         <Header></Header>
+        <div className="bodyPage">
         <div>
           <ContentTitle></ContentTitle>
         </div>
@@ -135,10 +140,11 @@ export default class HomePage extends Component {
         <div className="pagination">
           {this.createPrevious(pageCurrent)}
           {this.createPageNum(numberOfPage,pageCurrent)}
-          {this.createNext(pageCurrent)}
+          {this.createNext(pageCurrent,limitCard)}
         </div>
         <div>
             <Footer></Footer>
+        </div>
         </div>
       </div>
     );

@@ -1,5 +1,6 @@
 .footer{
     margin-top: 60px;
+    line-height: 14px;
 }
 .footer_contact_container{
     width: 100%;
@@ -14,12 +15,8 @@
   
 }
 .footer_contact>a{
-    padding : 10px 10px 9px 30px;
+    padding : 10px 10px 9px 10px;
     height: 42px;
-    font-family: 'Lora';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
     text-align: center;
 }
 .footer_contact>a>i{
@@ -34,4 +31,57 @@
    line-height: 10px;
    opacity: 0.8;
    margin:6px 10px;
+}
+.dribbble:hover{
+    color: white;
+    border-radius: 20px;
+    background-color: #DF3E7B !important;
+}
+.pinterest:hover{
+    color: white;
+    border-radius: 20px;
+    background-color: #CA222F !important;
+}
+.twitter:hover{
+    color: white;
+    border-radius: 20px;
+    background-color: #00ABF0 !important;
+}
+.facebook:hover{
+    color: white;
+    border-radius: 20px;
+    background-color: #47639E !important;
+}
+.footer_below_container{
+    padding: 0 20px;
+    text-align: center;
+}
+.footer_below{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    margin : 48px auto 35px auto !important;
+    font-size: 13.68px;
+    line-height: 23.256px;
+
+}
+.bullet:before {
+    content: "/";
+    margin: 0 15px 0 15px;
+    opacity: 0.3;
+    height: 14px;
+    width: 8px;
+  }
+.footer_below>li{
+    cursor: pointer;
+}
+.footer_below>li>a:hover{
+    color:#f96939;
+}
+.footer_text{
+    margin : 20px 0;
+    font-size: 13px;
+    opacity: 0.7;
+    line-height: 22px;
+    text-align: center;
 }

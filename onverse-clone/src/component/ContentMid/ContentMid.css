@@ -1,7 +1,28 @@
 .mid_content {
-    width: 399.33px;
-    padding: 10px 30px 30px 30px;
-    margin: 0;
-    display:flex;
-    flex-direction: column;
-  }
+  width: 399.33px;
+  padding: 10px 30px 30px 30px;
+  margin: 0;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFCE2D;
+}
+.mid{
+  width: 459.33px;
+  margin: 0 0 60px 0;
+  padding: 0 30px;
+  background-color: #FFFFFF;
+}
+.mid_content>p{
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  letter-spacing: -0.42px;
+  color: #000000;
+}
+.mid_content>h2{
+  line-height: 36.4px;
+  letter-spacing: -0.42px;
+  opacity: 1;
+}
