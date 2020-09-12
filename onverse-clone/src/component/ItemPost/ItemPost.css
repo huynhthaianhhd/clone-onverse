@@ -1,0 +1,64 @@
+.item_post {
+  width: 459.33px;
+  margin: 0 0 60px 0;
+  padding: 0 30px;
+}
+.item_image {
+  width: 399.33px;
+}
+.item_content {
+  width: 399.33px;
+  padding: 10px 30px 30px 30px;
+  margin: 0;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  display:flex;
+  flex-direction: column;
+}
+.item_dateType {
+  margin: 15px 0 0 0;
+  font-family: "Poppins";
+  line-height: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10px;
+  color: #a0a0a0;
+  letter-spacing: 2px;
+}
+h2 {
+  color: #262626;
+  font-family: "Poppins";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36.4px;
+  letter-spacing: -0.84px;
+  margin: 15px 0px 20px 0px;
+}
+.item_description {
+  font-family: "Lora";
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  color: #484e54;
+  line-height: 29px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.read_more{
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 7px 10px 7px 10px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  align-self: flex-end;
+}
+.read_more:hover{
+    background-color: #ffc507;
+}

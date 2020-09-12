@@ -5,15 +5,16 @@
 .content{
     width: 72%;
 }
-h2{
+.content h2{
     font-family: 'Poppins';
-    font-size: 36.5px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 700;
     line-height: 49px;
     color:#222;
     margin:10px 0 20px 0;
     padding :0;
+    letter-spacing: -1px;
 }
 p{
     font-family: 'Lora';
@@ -22,4 +23,14 @@ p{
     font-size: 23px;
     line-height: 39px;
     color:#484e54;
+}
+p>a{
+    text-decoration: none;
+    color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+p>a:hover{
+    background-color:#f2bd54;
+    color: white;
 }

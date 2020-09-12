@@ -14,12 +14,13 @@ export default class App extends Component {
       <div>
         <Router>
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <HomePage />
+          </Route>
+          <Route path="/:page" exact component={HomePage}>
           </Route>
         </Switch>
         </Router>
-        
       </div>
     )
   }

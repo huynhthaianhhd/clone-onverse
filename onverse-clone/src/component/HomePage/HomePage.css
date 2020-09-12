@@ -1,0 +1,36 @@
+.card_post {
+  display: flex;
+  padding: 0px 70px 10px 70px;
+  margin-top: 160px;
+}
+.card_post_1, .card_post_2, .card_post_3 {
+    display:flex;
+    flex-direction: column;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.pagination>span{
+  border: 1px solid #eaeaea;
+  color: #343434;
+  text-align: center;
+  font-family: "Lora";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 13px 15px 13px 15px;
+  line-height: 16px;
+  margin-left: 15px;
+}
+.active{
+  background-color: #ffce2d;
+  border: 1px solid #eaeaea;
+  color: #2d2525 !important;
+  font-weight: 700 !important;
+}
+a{
+    text-decoration: none;
+    color: #343434;
+}

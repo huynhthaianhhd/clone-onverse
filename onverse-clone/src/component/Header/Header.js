@@ -7,9 +7,9 @@ export default class Header extends Component {
       <div className="header">
         <div className="header_left">
           <div className="header_title">
-            <a className="logo" href="/">
+            <a className="logo">
               <img
-                class="tranz"
+                className="tranz"
                 src="http://gutenberg.wpmasters.org/onverse/wp-content/uploads/sites/2/2018/09/onverse-logo-1.png"
                 alt="Onverse"
               />
@@ -21,43 +21,50 @@ export default class Header extends Component {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/users">Features</Link>
+                <Link to="/users">
+                  Features <span>&#9660;</span>
+                </Link>
               </li>
               <li>
-                <Link to="/users">Post Features</Link>
+                <Link to="/users">
+                  Post Features <span>&#9660;</span>
+                </Link>
               </li>
               <li>
-                <Link to="/users"> Categories</Link>
+                <Link to="/users">
+                  {" "}
+                  Categories <span>&#9660;</span>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="header_right">
-          <ul class="header_icon_ul">
-            <li class="sprite-facebook">
+        <div className="header_right">
+          <ul className="header_icon_ul">
+            <li className="sprite-facebook">
               <a>
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
             </li>
-            <li class="sprite-twitter">
+            <li className="sprite-twitter">
               <a>
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </a>
             </li>
-            <li class="sprite-pinterest">
+            <li className="sprite-pinterest">
               <a>
-                <i class="fab fa-pinterest"></i>
+                <i className="fab fa-pinterest"></i>
               </a>
             </li>
-            <li class="sprite-dribbble">
+            <li className="sprite-dribbble">
               <a>
-                <i class="fab fa-dribbble"></i>
+                <i className="fab fa-dribbble"></i>
               </a>
             </li>
-            <li class="sprite-dribbble">
+            <li className="sprite-dribbble">
               <a>
-              <i class="fa fa-search" aria-hidden="true"></i>
+                <i className="fa fa-search" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
