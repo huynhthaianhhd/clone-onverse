@@ -112,7 +112,6 @@ export default class HomePage extends Component {
     const  limitCard  = 9;
     const {match}=this.props;
     let pageCurrent;
-    console.log(match);
     if (match){
         pageCurrent = match.params.page;
     }
